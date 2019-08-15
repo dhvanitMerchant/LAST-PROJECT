@@ -23,6 +23,7 @@ function Index() {
             <tr>
               <th>Name</th>
               <th>Population</th>
+
               <th>Actions</th>
             </tr>
           </thead>
@@ -36,8 +37,8 @@ function Index() {
                 <td>{country.export}</td>
                 
                 <td>
-                  <Link to={`/countries/${country._id}/edit`}>edit</Link>|
-                  <Link to={`/countries/${country._id}/destroy`}>delete</Link>
+                  <Link to={`/${country._id}/edit`}>edit</Link>|
+                  <Link to={`/${country._id}/destroy`}>delete</Link>
                 </td>
               </tr>
             ))}
