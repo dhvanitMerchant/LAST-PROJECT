@@ -9,7 +9,7 @@ function Destroy(props) {
     });
   }, [props]);
 
-  return <Redirect to="/countries" />;
+  return <Redirect to="/" />;
 }
 
 export default Destroy;

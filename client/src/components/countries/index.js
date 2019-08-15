@@ -32,7 +32,7 @@ function Index() {
             {countries.map(country => (
               <tr key={country._id}>
                 <td>
-                  <Link to={`/countries/${country._id}`}>{country.name}</Link>
+                  <Link to={`/${country._id}`}>{country.name}</Link>
                 </td>
                 <td>{country.export}</td>
                 
