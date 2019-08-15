@@ -26,7 +26,7 @@ function New() {
     });
   }
 
-  if (redirect) return <Redirect to="/countries" />;
+  if (redirect) return <Redirect to="/" />;
 
   return (
     <div className="container">

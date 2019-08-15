@@ -17,7 +17,7 @@ function Edit(props) {
 
     Axios.post("/api/countries/update", {
       id: props.match.params.id,
-      country: inputs
+      ...inputs
     })
       .then(resp => setRedirect(true))
       .catch(err => console.error(err));
